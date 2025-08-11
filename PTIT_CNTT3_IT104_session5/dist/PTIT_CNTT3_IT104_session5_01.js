@@ -23,4 +23,4 @@ class car extends Vehicle {
     }
 }
 let car1 = new car("toyota", 2017, "red");
-console.log(car1.showInfo());
+car1.showInfo();

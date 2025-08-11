@@ -14,8 +14,6 @@ class Vehicle {
     this.year = yearValue;
     this.company = companyValue;
   }
-  
-  
 }
 class car extends Vehicle {
   constructor(nameValue: string, yearValue: number, companyValue: string) {
@@ -30,5 +28,5 @@ class car extends Vehicle {
     );
   }
 }
-let car1 = new car("toyota",2017,"red")
-console.log(car1.showInfo());
+let car1 = new car("toyota", 2017, "red");
+car1.showInfo();

@@ -1,3 +1,9 @@
+// Định nghĩa lớp Employee có các thuộc tính: 
+// name: tên nhân viên có phạm vi truy cập là public
+// company: tên công ty có mức phạm vi truy cập là protected
+// phone: số điện thoại có mức phạm vi truy cập cập là private
+// printInfo(): phương thức để In ra tất cả thuộc tính
+// Tạo ra một thực thể từ lớp Employee và gọi phương thức printInfo() để in ra các thuộc tính.
 class Employee {
     constructor(name, company, phone) {
         this.name = name;
@@ -5,16 +11,8 @@ class Employee {
         this.phone = phone;
     }
     printInfo() {
-        console.log(`Ten: ${this.name}`);
-        console.log(`Cong ty: ${this.company}`);
-        console.log(`SDT: 0${this.phone}`);
-    }
-    getName() {
-        return this.name;
-    }
-    setName(name) {
-        this.name = name;
+        console.log(`ten nha nvien: ${this.name} | ten cong ty: ${this.company} | SDT: ${this.phone}`);
     }
 }
-const user = new Employee("Le Van A", "ABCXYZ", 987525613);
-user.printInfo();
+let Employee1 = new Employee("hoang nguyen duc", "samsung", "02345678");
+Employee1.printInfo();

@@ -1,6 +1,6 @@
 class Vehicle05 {
   public name: string;
-  public year: number;
+  protected year: number;
   private company: string;
   readonly id: number;
 
